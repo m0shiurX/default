@@ -1,11 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+	content: ['./*.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		fontFamily: {
 			bn: ['Hind Siliguri', 'sans-serif'],
 		},
-		extend: {},
+		extend: {
+			listStyleImage: {
+				tick: 'url("./tick.svg")',
+			},
+		},
+		container: {
+			center: true,
+			padding: '2rem',
+		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/typography'), require('daisyui')],
+	daisyui: {
+		themes: ['light', 'dark', 'cupcake', 'emerald'],
+	},
 };

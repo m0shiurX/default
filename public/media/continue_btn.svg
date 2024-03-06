@@ -1,0 +1,19 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="223 395 50 50" enable-background="new 223 395 50 50" xml:space="preserve">
+    <defs>
+        <filter id="shadow">
+            <feOffset result="offOut" in="SourceAlpha" dx="1" dy="1"></feOffset>
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="1"></feGaussianBlur>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"></feBlend>
+        </filter>
+    </defs>
+    <g class="adjustable bg dropShadow" style="fill: #041a4d">
+        <path
+            d="M247.75,399.941c11.29,0,20.475,9.185,20.475,20.475s-9.185,20.476-20.475,20.476  c-11.291,0-20.475-9.186-20.475-20.476S236.459,399.941,247.75,399.941z M247.75,397.667c-12.563,0-22.75,10.187-22.75,22.75  c0,12.564,10.187,22.751,22.75,22.751s22.75-10.187,22.75-22.751C270.5,407.853,260.313,397.667,247.75,397.667z">
+        </path>
+    </g>
+    <g class="adjustable fg dropShadow" style="fill: #ffffff">
+        <path
+            d="M253.498,420.203l-11.063-7.637c0-0.211-0.171-0.381-0.382-0.381c-0.211,0-0.381,0.17-0.381,0.381   c0,0.126,0.062,0.244,0.165,0.313v15.272c0,0.211,0.171,0.382,0.381,0.382c0.076,0,0.152-0.022,0.217-0.066l11.063-7.637   c0.173-0.12,0.216-0.357,0.096-0.532C253.567,420.261,253.536,420.229,253.498,420.203L253.498,420.203z">
+        </path>
+    </g>
+</svg>
