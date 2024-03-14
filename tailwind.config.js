@@ -25,7 +25,7 @@ export default {
 					accent: '#00ae89',
 					neutral: '#1c1c1c',
 					'base-100': '#f0ffff',
-					info: '#00ffff',
+					info: '#fef3c7',
 					success: '#00b100',
 					warning: '#f47100',
 					error: '#ff4a74',
