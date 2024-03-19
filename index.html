@@ -28,7 +28,8 @@
           <li><a>মূল্য তালিকা</a></li>
           <li><a>যোগাযোগ</a></li>
           <li class="flex ml-3 justify-center">
-            <a class="btn btn-md rounded-xs btn-primary text-white text-base">ডেমো দেখুন</a>
+            <a href="javascript:void" class="btn btn-md rounded-xs btn-primary text-white text-base"
+              onclick="demo_modal.showModal()">ডেমো দেখুন</a>
           </li>
         </ul>
       </div>
@@ -45,8 +46,12 @@
         কাঁধে নিয়ে Facebook পেজের মাধ্যমে ব্যবসা আর কত?
       </p>
       <div class="flex justify-center space-x-2">
-        <a href="" class="btn btn-primary text-white px-5"><span class="font-semibold">ডেমো দেখুন</a>
-        <a href="" class="btn btn-outline px-5"><span class="font-bold">যোগাযোগ</a>
+        <button class="btn btn-primary text-white px-5" onclick="demo_modal.showModal()">
+          <span class="font-bold">ডেমো দেখুন</span>
+        </button>
+        <button class="btn btn-outline px-5" onclick="contact_modal.showModal()">
+          <span class="font-bold">যোগাযোগ</span>
+        </button>
       </div>
     </div>
     <div class="mt-2">
@@ -107,8 +112,12 @@
         </div>
       </div>
       <div class="flex my-12 justify-center space-x-2">
-        <a href="" class="btn btn-primary text-white px-5"><span class="font-bold">ডেমো দেখুন</a>
-        <a href="" class="btn btn-outline px-5"><span class="font-bold">যোগাযোগ</a>
+        <button class="btn btn-primary text-white px-5" onclick="demo_modal.showModal()">
+          <span class="font-bold">ডেমো দেখুন </span>
+        </button>
+        <button class="btn btn-outline px-5" onclick="contact_modal.showModal()">
+          <span class="font-bold">যোগাযোগ</span>
+        </button>
       </div>
     </div>
     <!-- Problems Section End-->
@@ -145,7 +154,7 @@
       </li>
       <li>
         <hr class="bg-primary" />
-        <div class="timeline-start timeline-box">প্রয়োজনে কন্টেন্ট কাস্টমাইজেশন করুন</div>
+        <div class="timeline-start timeline-box">প্রয়োজনে কন্টেন্ট কাস্টমাইজ করুন</div>
         <div class="timeline-middle">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-primary">
             <path fill-rule="evenodd"
@@ -183,7 +192,7 @@
           class="space-y-8 place-content-center lg:grid lg:grid-cols-3 xl:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
           <!-- Pricing Card-->
           <div
-            class="card mx-auto bg-base-100 md:w-full shadow-xl border-2 border-slate-100 hover:border-slate-500 hover:shadow-2xl">
+            class="card mx-auto bg-base-100 sm:w-full md:w-96 lg:w-72 xl:w-96 shadow-xl border-2 border-slate-100 hover:border-slate-500 hover:shadow-2xl">
             <div class="card-body">
               <h2 class="card-title justify-center text-2xl font-semibold">Standard</h2>
               <p class="font-light text-gray-500 sm:text-lg text-center">Best option for personal use & for your
@@ -245,14 +254,14 @@
                 </li>
               </ul>
               <div class="card-actions justify-center">
-                <button class="btn btn-wide btn-outline">Order Now</button>
+                <button class="btn btn-wide max-w-full btn-outline">Order Now</button>
               </div>
             </div>
           </div>
           <!-- Pricing Card End-->
           <!-- Pricing Card-->
           <div
-            class="card mx-auto md:w-full bg-base-100  shadow-xl border-2 border-slate-100 hover:border-slate-500 hover:shadow-2xl">
+            class="card mx-auto  sm:w-full md:w-96 lg:w-72 xl:w-96 bg-base-100  shadow-xl border-2 border-slate-100 hover:border-slate-500 hover:shadow-2xl">
             <div class="card-body">
               <h2 class="card-title justify-center text-2xl font-semibold">Growth</h2>
               <p class="font-light text-gray-500 sm:text-lg text-center">Best option for personal use & for your
@@ -314,7 +323,7 @@
                 </li>
               </ul>
               <div class="card-actions justify-center">
-                <button class="btn btn-wide btn-primary">Order Now</button>
+                <button class="btn btn-wide max-w-full btn-primary">Order Now</button>
               </div>
             </div>
           </div>
@@ -322,7 +331,7 @@
 
           <!-- Pricing Card-->
           <div
-            class="card mx-auto md:w-full bg-base-100 shadow-xl border-2 border-slate-100 hover:border-slate-500 hover:shadow-2xl">
+            class="card mx-auto sm:w-full md:w-96 lg:w-72 xl:w-96 bg-base-100 shadow-xl border-2 border-slate-100 hover:border-slate-500 hover:shadow-2xl">
             <div class="card-body">
               <h2 class="card-title justify-center text-2xl font-semibold">Custom</h2>
               <p class="font-light text-gray-500 sm:text-lg text-center">Scalable upto your needs</p>
@@ -383,7 +392,7 @@
                 </li>
               </ul>
               <div class="card-actions justify-center">
-                <button class="btn btn-wide btn-outline">Order Now</button>
+                <button class="btn btn-wide max-w-full btn-outline">Order Now</button>
               </div>
             </div>
           </div>
@@ -462,8 +471,10 @@
         </h1>
         <p class="mt-2 mb-5 text-secondary text-xl">আপনার যেকোনো প্রশ্নের উত্তর জানতে এখনি যোগাযোগ করুন</p>
         <div class="flex my-6 justify-center space-x-2">
-          <a href="" class="btn btn-primary text-white px-5"><span class="font-bold">ডেমো দেখুন</a>
-          <a href="" class="btn btn-outline px-5"><span class="font-bold">যোগাযোগ</a>
+          <a href="javascript:void" class="btn btn-primary text-white px-5" onclick="demo_modal.showModal()"><span
+              class="font-bold">ডেমো দেখুন</a>
+          <a href="javascript:void" class="btn btn-outline px-5" onclick="contact_modal.showModal()"><span
+              class="font-bold">যোগাযোগ</a>
         </div>
       </div>
     </div>
@@ -491,6 +502,47 @@
     </div>
   </footer>
   <!-- Footer End-->
+
+  <!-- Modal Sections -->
+  <!-- You can open the modal using ID.showModal() method -->
+  <dialog id="contact_modal" class="modal">
+    <div class="modal-box w-11/12 max-w-5xl">
+      <h3 class="font-bold text-lg">Hello!</h3>
+      <p class="py-4">Click the button below to close</p>
+      <div class="modal-action">
+        <form method="dialog">
+          <!-- if there is a button, it will close the modal -->
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="demo_modal" class="modal">
+    <div class="modal-box bg-slate-50 w-10/12 max-w-xl p-12">
+      <form method="dialog">
+        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+      </form>
+      <h3 class="font-bold text-lg">আপনার সঠিক তথ্য দিয়ে ডেমো দেখুন</h3>
+      <form class="space-y-5 mt-5 form-control" action="">
+        <label class="input bg-white input-bordered flex items-center gap-2">
+          Name
+          <input type="text" class="grow" placeholder="John" required />
+        </label>
+        <label class="input bg-white input-bordered flex items-center gap-2">
+          Phone
+          <input type="text" class="grow" placeholder="880" required />
+        </label>
+        <label class="label justify-start space-x-3 cursor-pointer">
+          <input type="checkbox" class="checkbox" required />
+          <span class="label-text">আমার দেয়া তথ্য নির্ভুল এবং এই তথ্যসমূহ সংরক্ষনের অনুমতি দিচ্ছি</span>
+        </label>
+        <div class="modal-action">
+          <button class="btn btn-primary text-white px-5">ডেমোতে নিয়ে চলুন</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+  <!-- Modal Sections End-->
   <!-- CONTENT SECTION END -->
   <script type="module" src="/main.js"></script>
 </body>

@@ -91,6 +91,15 @@ vid_player.on('ready', () => {
 	}
 });
 
+document.getElementById('playAt15').addEventListener('click', () => {
+	start_playback_from(15);
+});
+document.getElementById('playAt25').addEventListener('click', () => {
+	start_playback_from(25);
+});
+document.getElementById('playAt35').addEventListener('click', () => {
+	start_playback_from(35);
+});
 vid_player.on('timeupdate', () => {
 	let current_time = vid_player.currentTime();
 	if (!vid_player.muted() && current_time > 1) {
